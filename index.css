@@ -1,0 +1,431 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+  font-size: 100%;
+  line-height: 1.6;
+  letter-spacing: 0.2px;
+  overflow-wrap: break-word;
+}
+
+body {
+  display: grid;
+  /* grid-template-areas:
+    "menu main"
+    "menu main"; */
+  grid-template-columns: 16rem 1fr;
+}
+
+nav,
+main {
+  margin-top: 2rem;
+}
+
+header {
+  grid-column-start: 1;
+  height: 100vh;
+}
+
+main {
+  grid-column-start: 2;
+}
+
+.containerHeaderMenu div {
+  display: none;
+}
+
+.containerSearchAndLogout,
+.HeaderBodyContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.containerSection {
+  display: none;
+}
+
+.HeaderBodyContainer {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.companyName {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+#navLinks {
+  list-style: none;
+}
+
+#navLinks li {
+  margin: 0.781rem 0;
+}
+
+.links {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+
+  padding: 0.7rem 0 0.7rem 2rem;
+  border-radius: 0 3.125rem 3.125rem 0;
+
+  cursor: pointer;
+}
+
+.links > span:nth-child(1) {
+  font-weight: 600;
+}
+
+.links:hover {
+  background-color: #dee2e6;
+  transition: 965ms;
+}
+
+.links span {
+  margin-left: 1rem;
+}
+
+#linkLogout {
+  display: none;
+}
+
+#linkSolicitudes {
+  background-color: #bfd7ff;
+  font-weight: 600;
+}
+
+#imgSolicitudes,
+#imgSAprobadas {
+  width: 23px;
+  margin: 0 0.281rem;
+}
+
+#imgSAsignadas {
+  width: 27px;
+  margin: 0 0.156rem;
+}
+
+#imgReportes {
+  width: 32px;
+}
+
+#imgSNoAprobadas,
+#imgConfiguracion {
+  width: 29px;
+  margin: 0 0.094rem;
+}
+
+.containerSearchAndLogout {
+  align-items: center;
+}
+
+.containerLogout {
+  width: 100%;
+
+  display: flex;
+  justify-content: flex-end;
+}
+
+.welcomeUser {
+  margin-right: 0 1rem 0 2rem;
+  font-weight: 500;
+}
+
+.searchContainer {
+  width: 18rem;
+
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid #adb5bd;
+  border-radius: 1.875rem;
+}
+
+#searchInput {
+  width: 80%;
+  height: 1.8rem;
+  outline: none;
+  border: none;
+}
+
+#imgSearch {
+  width: 20px;
+  cursor: pointer;
+}
+
+#imgLogout {
+  width: 1.8rem;
+  margin: 0 2rem;
+  cursor: pointer;
+}
+
+.nameOfPage {
+  margin: 1.2rem 0;
+  font-weight: 400;
+}
+
+.pagination {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+
+  border-top: 1px solid #b0b8c0;
+  padding: 0.7rem 0;
+
+  position: sticky;
+}
+
+.pagination p {
+  font-size: 0.75rem;
+  color: #adb5bd;
+}
+
+.containerBackAndForward {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+
+  margin-left: 2rem;
+}
+
+.containerBackAndForward a {
+  display: flex;
+  align-items: center;
+}
+
+.containerBackAndForward a:nth-child(1) {
+  margin-bottom: 0.1rem;
+  margin-right: 0.5rem;
+}
+
+.imgArrow {
+  width: 1.438rem;
+}
+
+.imgarrow:nth-child(2) {
+  margin-top: 0.5rem;
+}
+
+.ces {
+  height: 450px;
+  overflow-y: auto;
+}
+
+.containerEmail {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  border-top: 1px solid #b0b8c0;
+  padding: 0.7rem 3rem;
+  cursor: pointer;
+}
+
+.containerEmail:hover {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.containerEmail p {
+  font-weight: 500;
+}
+
+.containerEmail p:nth-child(2) {
+  margin: 0 1rem;
+}
+
+.emailRead {
+  background-color: #d9dde1;
+}
+
+.emailRead p {
+  font-weight: 400;
+}
+
+footer {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+
+  padding: 1rem 0;
+  color: #6c757d;
+  font-size: 0.75rem;
+  border-top: 1px solid #b0b8c0;
+}
+
+.titleReporte {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.containerSearchReporte {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 2rem 0 3rem 0;
+}
+
+.containerSearchReporte select:nth-child(2) {
+  margin: 0 1rem;
+}
+
+.containerSearchReporte select:nth-child(3) {
+  margin-right: 1rem;
+}
+
+#yearInput,
+#monthInput,
+#tipoSolicitudInput {
+  padding: 0.5rem 1rem;
+  background-color: #fff;
+  border: 1px solid #adb5bd;
+  border-radius: 0.5rem;
+}
+
+.btnGenerarPDF {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+
+  padding: 0.5rem 1rem;
+
+  background-color: #5465ff;
+  border-radius: 1.563rem;
+  outline: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.containerPDF {
+  display: none;
+  text-align: center;
+}
+
+@media only screen and (max-width: 950px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  header {
+    height: 100%;
+  }
+
+  .containerHeaderMenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 1rem;
+  }
+
+  .containerHeaderMenu div {
+    display: flex;
+    align-items: flex-end;
+    cursor: pointer;
+  }
+
+  #navLinks {
+    display: none;
+  }
+
+  .companyName {
+    text-align: start;
+    margin: 0;
+  }
+
+  .links {
+    padding: 0.7rem 0 0.7rem 1rem;
+    border-radius: 0;
+    justify-content: center;
+  }
+
+  #linkLogout {
+    display: flex;
+    color: #adb5bd;
+  }
+
+  .HeaderBodyContainer,
+  .nameOfPage {
+    margin-left: 1rem;
+  }
+
+  .containerSearchAndLogout {
+    display: none;
+  }
+
+  .containerLogout {
+    display: none;
+  }
+
+  .containerEmail {
+    padding-left: 1rem;
+
+    flex-wrap: nowrap;
+    /* flex-direction: column;
+    justify-content: flex-start !important;
+    text-align: start !important; */
+  }
+
+  .containerEmail p:nth-child(2) {
+    margin: 0 1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .ces {
+    height: 100%;
+    overflow-y: auto;
+  }
+
+  .containerSearchReporte {
+    width: 100vw;
+    flex-wrap: wrap;
+    padding: 0 1rem;
+  }
+}
+
+@media only screen and (max-width: 495px) {
+  .btnGenerarPDF {
+    margin: 1rem 0;
+  }
+}
+
+/* 408 */
+@media only screen and (max-width: 408px) {
+  .containerSearchReporte {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+
+  .containerSearchReporte select:nth-child(2) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .containerSearchReporte select:nth-child(3) {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+
+  .containerSearchReporte select {
+    margin: 1rem 0;
+  }
+
+  .btnGenerarPDF {
+    margin: 1rem 0;
+  }
+}

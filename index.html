@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="index.css">
+
+    <!-- JavaScript -->
+    <script src="JavaScript/MenuJs/index.js" defer></script>
+    <script src="JavaScript/DisplaySection/index.js" type="module"></script> 
+    <script src="JavaScript/GenerarPDF/index.js" defer></script>
+
+    <title>Prototipo</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="containerHeaderMenu">
+                <h2 class="companyName">XYZ</h2>
+                <div id="btnMenu">
+                    <img src="https://img.icons8.com/material-outlined/30/000000/menu.png"/>
+                </div>
+            </div>
+            <ul id="navLinks">
+                <li>
+                    <a class="links link" id="linkSolicitudes">
+                        <img id="imgSolicitudes" src="images/inbox.png" />
+                        <span>Solicitudes</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="links link" id="linkSAsignadas">
+                        <img id="imgSAsignadas" src="images/icons8-email-64.png" />
+                        <span>S. Asignadas</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="links link" id="linkSAprobadas">
+                        <img id="imgSAprobadas" src="images/checked.png" />
+                        <span>S. Aprobadas</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="links link" id="linkSNoAprobadas">
+                        <img id="imgSNoAprobadas" src="images/incorrect.png"/>
+                        <span>S. No aprobadas</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="links link" id="linkReportes">
+                        <img id="imgReportes" src="images/icons8-report-file-64.png" />
+                        <span>Reportes</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="links" id="linkConfiguracion">
+                        <img id="imgConfiguracion" src="images/icons8-settings-384.png" />
+                        <span>Configuración</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="linkLogout" class="links">
+                        <img id="imgConfiguracion" src="images/logout(2).png" />
+                        <span>Logout</span>
+                    </a>
+                </li>
+            </ul>
+        </nav> 
+    </header>
+    <main>
+        <section class="containerSection">
+            <div class="HeaderBodyContainer">
+                <h1 class="welcomeUser">Hi, Felipe Ceballos</h1>
+                <div class="containerSearchAndLogout">
+                    <div class="searchContainer"> 
+                        <input id="searchInput" type="text" />
+                        <img id="imgSearch" src="images/search.png">
+                    </div>
+                    <img id="imgLogout" src="images/logout(2).png" />
+                </div>
+            </div>
+            <p class="nameOfPage">Solicitudes recibidas</p>
+            <div class="containerEmails">
+                <div class="pagination">
+                    <p>1 - 1 de 9</p>
+                    <div class="containerBackAndForward">
+                        <a>
+                            <img class="imgArrow" src="images/left-arrow(2).png" />
+                        </a>
+                        <a>
+                            <img class="imgArrow" src="images/next.png" />
+                        </a>
+                    </div>
+                </div>
+                <div class="ces">
+                    <div class="containerEmail">
+                        <p>Andrea Perez</p>
+                        <p>Permiso de incapacidad por accidente en el moto</p>
+                        <p>20:30</p>
+                    </div>
+                    <div class="containerEmail">
+                        <p>Andrea Perez</p>
+                        <p>Permiso de incapacidad por accidente en el moto</p>
+                        <p>20:30</p>
+                    </div>
+                    <div class="containerEmail">
+                        <p>Andrea Perez</p>
+                        <p>Permiso de incapacidad por accidente en el moto</p>
+                        <p>20:30</p>
+                    </div>
+                    <div class="containerEmail">
+                        <p>Andrea Perez</p>
+                        <p>Permiso de incapacidad por accidente en el moto</p>
+                        <p>20:30</p>
+                    </div>
+                    <div class="containerEmail">
+                        <p>Andrea Perez</p>
+                        <p>Permiso de incapacidad por accidente en el moto</p>
+                        <p>20:30</p>
+                    </div>
+                    <div class="containerEmail">
+                        <p>Andrea Perez</p>
+                        <p>Permiso de incapacidad por accidente en el moto</p>
+                        <p>20:30</p>
+                    </div>
+                    <div class="containerEmail">
+                        <p>Andrea Perez</p>
+                        <p>Permiso de incapacidad por accidente en el moto</p>
+                        <p>20:30</p>
+                    </div>
+                    <div class="containerEmail">
+                        <p>Andrea Perez</p>
+                        <p>Permiso de incapacidad por accidente en el moto</p>
+                        <p>20:30</p>
+                    </div>
+                    <div class="containerEmail">
+                        <p>Andrea Perez</p>
+                        <p>Permiso de incapacidad por accidente en el moto</p>
+                        <p>20:30</p>
+                    </div>
+                    <footer>
+                        <a>Condiciones</a>
+                        <span> - </span>
+                        <a>Privacidad</a>
+                        <span> - </span>
+                        <a>Políticas de la empresa</a>
+                    </footer>
+                </div>    
+            </div>
+        </section>
+        <section class="containerSection">
+            <div class="HeaderBodyContainer">
+                <h1 class="welcomeUser">Hi, Felipe Ceballos</h1>
+                <div class="containerSearchAndLogout">
+                    <div class="searchContainer"> 
+                        <input id="searchInput" type="text" />
+                        <img id="imgSearch" src="images/search.png">
+                    </div>
+                    <img id="imgLogout" src="images/logout(2).png" />
+                </div>
+            </div>
+            <p class="nameOfPage">Solicitudes asignadas</p>
+            <div class="containerEmails">
+                <div class="pagination">
+                    <p>1 - 1 de 5</p>
+                    <div class="containerBackAndForward">
+                        <a>
+                            <img class="imgArrow" src="images/left-arrow(2).png" />
+                        </a>
+                        <a>
+                            <img class="imgArrow" src="images/next.png" />
+                        </a>
+                    </div>
+                </div>
+                <div class="ces">
+                    <div class="containerEmail">
+                        <p>Juan Cent</p>
+                        <p>Permiso de incapacidad por accidente en el moto</p>
+                        <p>20:30</p>
+                    </div>
+                    <div class="containerEmail">
+                        <p>Maria Soto</p>
+                        <p>Permiso de incapacidad por accidente en el moto</p>
+                        <p>10:30</p>
+                    </div>
+                    <div class="containerEmail emailRead">
+                        <p>Claire Runa</p>
+                        <p>Permiso de incapacidad por accidente en el moto</p>
+                        <p>20 oct.</p>
+                    </div>
+                    <div class="containerEmail emailRead">
+                        <p>Andrea Perez</p>
+                        <p>Permiso de incapacidad por luto</p>
+                        <p>15. sep.</p>
+                    </div>
+                    <div class="containerEmail emailRead">
+                        <p>Jose Carlos</p>
+                        <p>Permiso de vacaciones</p>
+                        <p>3 sep.</p>
+                    </div>
+                    <footer>
+                        <a>Condiciones</a>
+                        <span> - </span>
+                        <a>Privacidad</a>
+                        <span> - </span>
+                        <a>Políticas de la empresa</a>
+                    </footer>
+                </div>    
+            </div>
+        </section>
+        <section class="containerSection">
+            <div class="HeaderBodyContainer">
+                <h1 class="welcomeUser">Hi, Felipe Ceballos</h1>
+                <div class="containerSearchAndLogout">
+                    <div class="searchContainer"> 
+                        <input id="searchInput" type="text" />
+                        <img id="imgSearch" src="images/search.png">
+                    </div>
+                    <img id="imgLogout" src="images/logout(2).png" />
+                </div>
+            </div>
+            <p class="nameOfPage">Solicitudes aprobadas</p>
+            <div class="containerEmails">
+                <div class="pagination">
+                    <p>1 - 1 de 2</p>
+                    <div class="containerBackAndForward">
+                        <a>
+                            <img class="imgArrow" src="images/left-arrow(2).png" />
+                        </a>
+                        <a>
+                            <img class="imgArrow" src="images/next.png" />
+                        </a>
+                    </div>
+                </div>
+                <div class="ces">
+                    <div class="containerEmail emailRead">
+                        <p>Andrea Perez</p>
+                        <p>Permiso de incapacidad por luto</p>
+                        <p>15. sep.</p>
+                    </div>
+                    <div class="containerEmail emailRead">
+                        <p>Jose Carlos</p>
+                        <p>Permiso de vacaciones</p>
+                        <p>3 sep.</p>
+                    </div>
+                    <footer>
+                        <a>Condiciones</a>
+                        <span> - </span>
+                        <a>Privacidad</a>
+                        <span> - </span>
+                        <a>Políticas de la empresa</a>
+                    </footer>
+                </div>    
+            </div>
+        </section>
+        <section class="containerSection">
+            <div class="HeaderBodyContainer">
+                <h1 class="welcomeUser">Hi, Felipe Ceballos</h1>
+                <div class="containerSearchAndLogout">
+                    <div class="searchContainer"> 
+                        <input id="searchInput" type="text" />
+                        <img id="imgSearch" src="images/search.png">
+                    </div>
+                    <img id="imgLogout" src="images/logout(2).png" />
+                </div>
+            </div>
+            <p class="nameOfPage">Solicitudes no aprobadas</p>
+            <div class="containerEmails">
+                <div class="pagination">
+                    <p>1 - 1 de 1</p>
+                    <div class="containerBackAndForward">
+                        <a>
+                            <img class="imgArrow" src="images/left-arrow(2).png" />
+                        </a>
+                        <a>
+                            <img class="imgArrow" src="images/next.png" />
+                        </a>
+                    </div>
+                </div>
+                <div class="ces">
+                    <div class="containerEmail emailRead">
+                        <p>Claire Runa</p>
+                        <p>Permiso de incapacidad por accidente en el moto</p>
+                        <p>20 oct.</p>
+                    </div>
+                    <footer>
+                        <a>Condiciones</a>
+                        <span> - </span>
+                        <a>Privacidad</a>
+                        <span> - </span>
+                        <a>Políticas de la empresa</a>
+                    </footer>
+                </div>    
+            </div>
+        </section>
+        <section class="containerSection">
+            <div class="HeaderBodyContainer">
+                <div class="containerLogout">
+                    <img id="imgLogout" src="images/logout(2).png" />
+                </div>
+            </div>
+            <h1 class="titleReporte">Generar Reporte</h1>
+            <div class="containerSearchReporte">
+                <select id="yearInput" name="years">
+                    <option value="2021">2021</option>
+                    <option value="2020">2020</option>
+                    <option value="2019">2019</option>
+                </select>
+                <select id="monthInput" name="month">
+                    <option value="Enero">Enero</option>
+                    <option value="Febrero">Febrero</option>
+                    <option value="Marzo">Marzo</option>
+                    <option value="Abril">Abril</option>
+                    <option value="Mayo">Mayo</option>
+                    <option value="Junio">Junio</option>
+                    <option value="Julio">Julio</option>
+                    <option value="Agosto">Agosto</option>
+                    <option value="Septiembre">Septiembre</option>
+                    <option value="Octubre">Octubre</option>
+                    <option value="Noviembre">Noviembre</option>
+                    <option value="Diciembre">Diciembre</option>
+                </select>
+                <select id="tipoSolicitudInput" name="tipoSolicitud">
+                    <option value="Vacaciones">Vacaciones</option>
+                    <option value="Permisos">Permisos</option>
+                </select>
+                <input type="button" class="btnGenerarPDF" value="Generar" />
+            </div>
+            <div class="containerPDF">
+                Estamos trabajando en tener el PDF
+            </div>
+        </section>
+    </main>
+</body>
+</html>
